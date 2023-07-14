@@ -1,17 +1,14 @@
+import { Button } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
+import { ProfilePage } from "./pages/Profile Page/ProfilePage";
 
 
 
 export const App = () => {
-  const state= useSelector((state)=>state)
-  useEffect(()=>{
-    console.log(state)
-  },[])
+
   return (
-      <div>
-        react app
-      </div>
+      <ProfilePage/>
   );
 }
 
