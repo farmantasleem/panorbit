@@ -2,7 +2,7 @@ import { Container, Image, Stack, Text } from "@chakra-ui/react"
 
 export const Address = () => {
     return(
-        <Container  width="350px" height={"500px"} display={"flex"} gap={"10px"} flexDirection={"column"} justifyContent={"center"} alignContent={"center"} alignItems={"center"}border={"2px"} borderColor={"red"}>
+        <Container  width="390px"  height={"500px"} display={"flex"} gap={"10px"} flexDirection={"column"} justifyContent={"center"} alignContent={"center"} alignItems={"center"}>
             <Text>Address</Text>
             <Stack width={"250px"}  display={"flex"} justifyContent={"left"} flexDirection={"row"}>
                 <Text>Street : </Text>
@@ -24,7 +24,7 @@ export const Address = () => {
                 <Text>Company Name : </Text>
                 <Text>XYZ Company</Text>
             </Stack>
-            <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtd6jUqok23bZ6zWoDOt0mLpwcQkMQYztPQ&usqp=CAU"/>
+            <Image width={"400px"} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtd6jUqok23bZ6zWoDOt0mLpwcQkMQYztPQ&usqp=CAU"/>
         </Container>
     )
 }

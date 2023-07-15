@@ -7,11 +7,15 @@
     display: none;
     position: absolute;
     transition: 0.5s ease-in;
-    left: 225px;
+    left: 195px;
     top: -6px;
     border-radius: 100%;
     border-top-right-radius: 0px;
     color: rgb(193,201,215);
     background-color: white;
     text-align: center;
+}
+
+.sidebar {
+     border-radius: 10px;
 }
