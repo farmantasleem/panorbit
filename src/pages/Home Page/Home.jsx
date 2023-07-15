@@ -1,9 +1,13 @@
 import { Center, Container, Heading, Image, Stack, Text, VStack } from "@chakra-ui/react"
 import "./style.css"
 import { UserHome } from "../../components/UserHome/UserHome"
+import { useSelector } from "react-redux"
+import { useEffect } from "react"
 
 
 export const Home = () => {
+    const userData= useSelector((state) =>state.state.userInfo)
+
     return(
         <Container id="home" minH={"100vh"} minWidth={"100%"}>
             <Center minH={"100vh"} bgColor={"transparent"}>
@@ -13,14 +17,12 @@ export const Home = () => {
                 </Heading>
 
              <VStack padding={"10px"} height={"360px"} overflowY={"scroll"}  gap={"10px"}>
-                <UserHome/>
-                <UserHome/>
-                <UserHome/>
-                <UserHome/>
-                <UserHome/>
-                <UserHome/>
-                <UserHome/>
-                <UserHome/>
+              {
+                userData.map((e,i)=>{
+                    return   <UserHome key={i} data={e}/>
+                })
+              }
+              
              </VStack>
             </Stack>
             </Center>
