@@ -5,6 +5,7 @@ import { ProfilePage } from "./pages/Profile Page/ProfilePage";
 import "./app.css"
 import { Home } from "./pages/Home Page/Home";
 import { getData } from "./redux/action";
+import { AllRoutes } from "./Routes/Routes";
 
 
 export const App = () => {
@@ -13,7 +14,7 @@ export const App = () => {
     dispatch(getData())
   },[])
   return (
-    <Home/>
+    <AllRoutes/>
   );
 }
 

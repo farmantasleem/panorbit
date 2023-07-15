@@ -1,4 +1,4 @@
-import { addUserData } from "./actionType";
+import { addUserData, getProfileData } from "./actionType";
 
 
 export const getData = () => async(dispatch) =>{
@@ -11,4 +11,9 @@ export const getData = () => async(dispatch) =>{
         console.log("Error",error.message)
     }
         
+}
+
+export const getProfile = (payload) =>{
+    
+    return {type:getProfileData,payload}
 }
