@@ -8,7 +8,8 @@ const reducer=(oldState=initialState,action)=>{
             console.log(payload)
             return {...oldState,userInfo:payload}
         case getProfileData:
-            const singleProfile = oldState.userInfo.filter(el=>el.id==payload)   
+            const profileId = payload ||localStorage.getItem("userId")
+            const singleProfile = oldState.userInfo.filter(el=>el.id==profileId)   
           
         return {...oldState,profileData:{...singleProfile[0]}}
         default:

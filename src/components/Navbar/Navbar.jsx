@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProfile } from "../../redux/action";
 import { useParams } from "react-router-dom";
 
-export const Navbar = ({data}) => {
+export const Navbar = ({data,title}) => {
     const[visible,setvisible] =useState(false)
     const {userId} =useParams()
     const dispatch=useDispatch()
@@ -18,7 +18,7 @@ export const Navbar = ({data}) => {
     },[userId])
     return(
         <Stack direction={"row"} width={"100%"} paddingBottom={"20px"} borderBottom={"2px"} borderColor={"silver"} justifyContent={"space-between"}>
-                <Text>Profile</Text>
+                <Text>{title}</Text>
                <HStack position={"relative"}>
                     <Image cursor={"pointer"} onClick={()=>setvisible(!visible)} borderRadius={"100px"} width={"30px"} height={"30px"} src={data.profilepicture}/>
                     <Text cursor={"pointer"} onClick={()=>setvisible(!visible)}>{data.name}</Text>

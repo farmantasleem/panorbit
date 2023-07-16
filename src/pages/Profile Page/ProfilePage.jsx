@@ -16,14 +16,14 @@ export const ProfilePage = () => {
     const dataProfile= useSelector(state => state.state.profileData)
 
     useEffect(()=>{
+        localStorage.setItem("userId",userId)
        dispatch(getProfile(userId));
-       console.log(dataProfile)
     },[])
     return (
         <Stack direction={"row"} border={'2px'}  borderColor={"red"} paddingBottom={"40px"} paddingTop={"40px"} alignItems={"center"} justifyItems={"left"} justifyContent={"left"}>
             <Sidebar />
             <Stack margin={"auto"} padding={"10px"}>
-                <Navbar  data={dataProfile}/>
+                <Navbar title={"Profile"}  data={dataProfile}/>
                 <Stack direction={"row"} gap={"40px"} padding={"10px"}>
                     <Profile data={dataProfile}/>
                     <Address  address={dataProfile?.address} company={dataProfile?.company}/>
