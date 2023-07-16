@@ -9,6 +9,7 @@ import { useParams } from "react-router-dom"
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { getProfile } from "../../redux/action"
+import { Chat } from "../../components/Chat/Chat"
 export const ProfilePage = () => {
     const {userId} =useParams();
     const dispatch=useDispatch()
@@ -27,6 +28,7 @@ export const ProfilePage = () => {
                     <Profile data={dataProfile}/>
                     <Address  address={dataProfile?.address} company={dataProfile?.company}/>
                 </Stack>
+                <Chat/>
             </Stack>
         </Stack>
     )
