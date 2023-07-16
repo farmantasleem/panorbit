@@ -9,7 +9,7 @@ export const GalleryPage = () => {
     const dataProfile = useSelector(state => state.state.profileData)
 
     return (
-        <Stack direction={"row"} border={'2px'} borderColor={"red"} height={"600px"} paddingBottom={"40px"} paddingTop={"40px"} alignItems={"center"} justifyItems={"left"} justifyContent={"left"}>
+        <Stack direction={"row"}  height={"600px"} paddingBottom={"40px"} paddingTop={"40px"} alignItems={"center"} justifyItems={"left"} justifyContent={"left"}>
             <Sidebar />
             <Stack margin={"auto"} padding={"10px"}>
                 <Navbar title="Gallery" data={dataProfile} />

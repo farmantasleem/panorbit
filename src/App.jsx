@@ -1,9 +1,9 @@
 import { Button } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ProfilePage } from "./pages/Profile Page/ProfilePage";
+import { ProfilePage } from "./pages/Pages/ProfilePage";
 import "./app.css"
-import { Home } from "./pages/Home Page/Home";
+import { Home } from "./pages/Pages/Home";
 import { getData } from "./redux/action";
 import { AllRoutes } from "./Routes/Routes";
 

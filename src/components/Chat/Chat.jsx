@@ -19,7 +19,7 @@ export const Chat = () => {
             <Stack hidden={!visible} id="activeUser" direction={"column"} gap={"5px"}>
                 {
                     userData.map((e) => {
-                        return <ChatbotUser data={e} />
+                        return <ChatbotUser key={e.id} data={e} />
                     })
                 }
 

@@ -22,11 +22,11 @@ export const ProfilePage = () => {
         dispatch(getProfile(userId));
     }, [])
     return (
-        <Stack direction={"row"} border={'2px'} borderColor={"red"} height={"600px"} paddingBottom={"40px"} paddingTop={"40px"} alignItems={"center"} justifyItems={"left"} justifyContent={"left"}>
+        <Stack direction={"row"}  height={"600px"} paddingBottom={"40px"} paddingTop={"40px"} alignItems={"center"} justifyItems={"left"} justifyContent={"left"}>
             <Sidebar />
             <Stack margin={"auto"} padding={"10px"}>
                 <Navbar title={"Profile"} data={dataProfile} />
-                <Stack direction={"row"} gap={"40px"} padding={"10px"} width={"800px"}>
+                <Stack direction={"row"} gap={"40px"} padding={"10px"}  width={"800px"}>
                     <Profile data={dataProfile} />
                     <Address address={dataProfile?.address} company={dataProfile?.company} />
                 </Stack>

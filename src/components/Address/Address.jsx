@@ -24,7 +24,7 @@ export const Address = ({ address, company }) => {
                 <Text color={"rgb(154,154,154)"} fontSize={"17px"}>Company Name : </Text>
                 <Text fontWeight={"bold"} color={"rgb(84,84,84)"}>{company?.name}</Text>
             </Stack>
-            <iframe height={"550px"} style={{ borderRadius: "10px" }} width={"500px"} src={`https://maps.google.com/maps?q=${address?.geo?.lat},${address?.geo?.lng}&hl=es;&output=embed`}></iframe>
+            <iframe height={"550px"} style={{ borderRadius: "10px",paddingRight:"20px" }} width={"500px"} src={`https://maps.google.com/maps?q=${address?.geo?.lat},${address?.geo?.lng}&hl=es;&output=embed`}></iframe>
             <HStack>
                 <Text>
                     Lat {address?.geo?.lat}

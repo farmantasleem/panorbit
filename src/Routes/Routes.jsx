@@ -1,9 +1,9 @@
 import { Route, Routes, } from "react-router-dom"
-import { Home } from "../pages/Home Page/Home"
-import { ProfilePage } from "../pages/Profile Page/ProfilePage"
-import { PostPage } from "../pages/Profile Page/PostPage"
-import { GalleryPage } from "../pages/Profile Page/GalleryPage"
-import { TodoPage } from "../pages/Profile Page/TodoPage"
+import { Home } from "../pages/Pages/Home"
+import { ProfilePage } from "../pages/Pages/ProfilePage"
+import { PostPage } from "../pages/Pages/PostPage"
+import { GalleryPage } from "../pages/Pages/GalleryPage"
+import { TodoPage } from "../pages/Pages/TodoPage"
 
 export const AllRoutes = () =>{
     return(

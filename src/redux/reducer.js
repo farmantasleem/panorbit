@@ -6,7 +6,6 @@ const reducer=(oldState=initialState,action)=>{
     const {type,payload} = action;
     switch (type) {
         case addUserData:
-            console.log(payload)
             return {...oldState,userInfo:payload}
         case getProfileData:
             const profileId = payload ||localStorage.getItem("userId")

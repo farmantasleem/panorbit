@@ -1,5 +1,5 @@
 import { Center, Container, Heading, Image, Stack, Text, VStack } from "@chakra-ui/react"
-import "./style.css"
+import "./style.home.css"
 import { UserHome } from "../../components/UserHome/UserHome"
 import { useSelector } from "react-redux"
 import { useEffect } from "react"
