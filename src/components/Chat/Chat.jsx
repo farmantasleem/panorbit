@@ -1,5 +1,5 @@
 import { Button, HStack, Image, Stack, Text } from "@chakra-ui/react"
-import { BsFillChatLeftFill,BsDot } from "react-icons/bs"
+import { BsFillChatLeftFill, BsDot } from "react-icons/bs"
 import { IoIosArrowUp } from "react-icons/io"
 
 import "./style.css"
@@ -8,21 +8,21 @@ import { useState } from "react"
 import { useSelector } from "react-redux"
 
 export const Chat = () => {
-    const[visible,setVisible] =useState(false)
-    const userData = useSelector((state)=>state.state.userInfo);
+    const [visible, setVisible] = useState(false)
+    const userData = useSelector((state) => state.state.userInfo);
     return (
-        <Stack id="chat" direction={"column"} style={{backgroundColor:visible?"white":"transparent"}}>
-            <Stack direction={"row"} id="chatBox" onClick={()=>setVisible(!visible)}>
+        <Stack id="chat" direction={"column"} style={{ backgroundColor: visible ? "white" : "transparent" }}>
+            <Stack direction={"row"} id="chatBox" onClick={() => setVisible(!visible)}>
                 <Button _hover={{ color: "white" }} backgroundColor={"transparent"} color={"white"} leftIcon={<BsFillChatLeftFill />}>Chats</Button>
                 <IoIosArrowUp />
             </Stack>
             <Stack hidden={!visible} id="activeUser" direction={"column"} gap={"5px"}>
-               {
-                userData.map((e)=>{
-                    return  <ChatbotUser data={e}/> 
-                })
-               }
-              
+                {
+                    userData.map((e) => {
+                        return <ChatbotUser data={e} />
+                    })
+                }
+
             </Stack>
         </Stack>
     )

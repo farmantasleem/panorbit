@@ -1,6 +1,8 @@
 import { addUserData, getProfileData } from "./actionType";
 
 
+// to fetch all the data and store in the redux
+
 export const getData = () => async(dispatch) =>{
        
     try {
@@ -12,6 +14,7 @@ export const getData = () => async(dispatch) =>{
     }
         
 }
+// to get single object data of specif user through id
 
 export const getProfile = (payload) =>{
     

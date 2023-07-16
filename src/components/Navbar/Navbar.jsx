@@ -14,7 +14,7 @@ export const Navbar = ({data,title}) => {
 
     useEffect(()=>{
        dispatch(getProfile(userId));
-       console.log(dataProfile)
+      
     },[userId])
     return(
         <Stack direction={"row"} width={"100%"} paddingBottom={"20px"} borderBottom={"2px"} borderColor={"silver"} justifyContent={"space-between"}>
