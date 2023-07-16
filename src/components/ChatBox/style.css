@@ -1,0 +1,55 @@
+#chatBoxPage{
+    position: fixed;
+    bottom: 20px;
+    width: 200px;
+    justify-content: center;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    height: 250px;
+    right: 290px;
+}
+#chatBoxNav{
+    background-color: rgb(44,101,200);
+    color: white;
+   padding: 2px;
+   border-radius: 10px;
+   width: 180px;
+   display: flex;
+   flex-direction: row;
+   justify-items: center;
+   padding-top: 5px;
+   align-content: center;
+   justify-content: space-between;
+}
+#input{
+    height: 40px;
+    background-color: transparent;
+}
+.message{
+    background-color: rgb(241,241,241);
+    color: rgb(142,142,142);
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 5px;
+    font-size: 14px;
+}
+.messageContainer{
+    width: 100%;
+    padding: 5px;
+    height: 200px;
+}
+.recieve {
+    text-align: left;
+    margin-right: auto;
+}
+.send{
+    margin-left: auto;
+    text-align: right;
+}
