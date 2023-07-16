@@ -22,10 +22,10 @@ export const ProfilePage = () => {
         <Stack direction={"row"} border={'2px'}  borderColor={"red"} paddingBottom={"40px"} paddingTop={"40px"} alignItems={"center"} justifyItems={"left"} justifyContent={"left"}>
             <Sidebar />
             <Stack margin={"auto"} padding={"10px"}>
-                <Navbar />
+                <Navbar  data={dataProfile}/>
                 <Stack direction={"row"} gap={"40px"} padding={"10px"}>
                     <Profile data={dataProfile}/>
-                    <Address address={dataProfile?.address}/>
+                    <Address  address={dataProfile?.address} company={dataProfile?.company}/>
                 </Stack>
             </Stack>
         </Stack>
